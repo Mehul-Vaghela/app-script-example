@@ -61,15 +61,15 @@ function checkFun(){
     if(Session.getActiveUser()!='yourmail@gmail.com'){
       if('B'+i == cell && ss.getActiveCell().getValue().toString() < 0.01){
         var subjectB=Bvals[0]+'-'+Avals[i-1]+'-'+ss.getActiveCell().getValue().toString();
-        MailApp.sendEmail('mv6527@gmail.com', subjectB,'',{htmlBody: htmltable});
+        MailApp.sendEmail('your_email', subjectB,'',{htmlBody: htmltable});
       }
       if('C'+i == cell && ss.getActiveCell().getValue().toString() > 0.01){
         var subjectC=Cvals[0]+'-'+Avals[i-1]+'-'+ss.getActiveCell().getValue().toString();
-        MailApp.sendEmail('mv6527@gmail.com', subjectC,'',{htmlBody: htmltable});
+        MailApp.sendEmail('your_email', subjectC,'',{htmlBody: htmltable});
       }
       if('D'+i == cell && ss.getActiveCell().getValue().toString() < 0.01){
         var subjectD=Dvals[0]+'-'+Avals[i-1]+'-'+ss.getActiveCell().getValue().toString();
-        MailApp.sendEmail('mv6527@gmail.com', subjectD,'', {htmlBody: htmltable});
+        MailApp.sendEmail('your_email', subjectD,'', {htmlBody: htmltable});
       }
     }
     
